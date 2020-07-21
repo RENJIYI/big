@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大镜</title>
+    <script src="big.js"></script>
+    <style>
+        *{
+        padding: 0px;
+        margin: 0px;
+        }     
+        .box{
+            margin: 0px;
+            width: 350px;
+            height: 350px;
+            position: relative;
+        }
+        .cover{
+            width: 150px;
+            height: 150px;
+            opacity: 0.3;
+            position: absolute;
+            background: red;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+              
+        .big{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 0px;
+            left: 360px;
+            display: none;
+            overflow: hidden;
+            border: 2px solid yellow;
+        }      
+        .big img{
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="box" class="box">
+        <div class="small">
+            <img src="img/1.jpg" width="350px"height="350px" style="border:black 1px solid">
+            <div class="cover"></div>
+        </div>
+        <div class="big">
+            <img src="img/1.jpg" width="800px"height="800px">
+        </div>
+    </div>
